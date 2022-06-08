@@ -1,0 +1,9 @@
+/* Tables */
+
+.data-table {
+    background-color: #fff;
+    @extend %subtle-shadow;
+    td {
+        border-bottom: none !important;
+    }
+}

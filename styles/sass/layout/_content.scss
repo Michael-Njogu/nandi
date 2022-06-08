@@ -1,0 +1,33 @@
+/* Content */
+
+.data-wrapper {
+    flex: 1 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.ic-content {
+    height: 100%;
+    margin-left: 300px;
+    &-header {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        justify-content: center;
+        padding: 10px 20px;
+        &-inner {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .ic-body {
+        padding: 20px;
+        position: relative;
+        &-content {
+            float: left;
+            width: 100%;
+        }
+    }
+}

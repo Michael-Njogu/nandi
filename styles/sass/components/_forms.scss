@@ -1,0 +1,23 @@
+/* Forms */
+
+.form-control, .form-select {
+    border-radius: 0;
+    @include convert-to-rem( 14 );
+    &-lg {
+        @include convert-to-rem( 20 );
+    }
+    &:focus, &:active {
+        border-color: $font-colour;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.form-select {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.col-form-label, .form-select-small {
+    @include convert-to-rem( 13, 600 );
+}
