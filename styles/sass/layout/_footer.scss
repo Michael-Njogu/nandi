@@ -5,8 +5,8 @@ footer {
     color: $dark-grey;
     border-top: 1px solid $lighter-grey;
     @include convert-to-rem( 13 );
-    margin-top: 35px;
     padding: 20px;
+    position: relative;
     .footer-inner {
         display: flex;
         justify-content: space-between;

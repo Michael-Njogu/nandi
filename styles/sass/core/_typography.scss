@@ -43,3 +43,12 @@ a {
     display: block;
     @include convert-to-rem( 30 );
 }
+
+.sidebar-title {
+    @include convert-to-rem( 14, 600 );
+}
+
+.ic-content-title {
+    @include convert-to-rem( 14, 600 );
+    margin-bottom: 0;
+}

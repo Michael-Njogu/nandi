@@ -7,10 +7,13 @@ html {
 body {
     background-color: $lavender;
     color: $font-colour;
+    display: flex;
+    flex-direction: column;
     font-family: $main-font;
     @include convert-to-rem( 14 );
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
     text-rendering: optimizeLegibility;
 }
 
