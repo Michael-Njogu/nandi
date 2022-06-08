@@ -7,7 +7,12 @@
 
 // Components
 @import 'components/cards';
+@import 'components/breadcrumbs';
+@import 'components/forms';
+@import 'components/tables';
 
 // Layout
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/content';
