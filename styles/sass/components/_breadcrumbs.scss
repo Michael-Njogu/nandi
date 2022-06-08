@@ -1,0 +1,27 @@
+.breadcrumbs {
+    background-color: $light-yellow-green;
+    @include convert-to-rem( 13, 500 );
+    padding: 10px 0;
+    ul {
+        display: flex;
+        @extend %unstyled-list;
+        li {
+            &::after {
+                content: "/";
+                display: inline-block;
+                padding: 0 8px;
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            a {
+                color: $dark-grey;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
