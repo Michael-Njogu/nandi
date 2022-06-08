@@ -1,0 +1,212 @@
+/* Cards */
+
+.oc-card {
+    background-color: #fff;
+    border: 1px solid $lighter-grey;
+    height: 100%;
+    padding: 20px;
+    &.no-padding {
+        padding: 0;
+    }
+    &-small-heading {
+        @include convert-to-rem( 15, 500 );
+    }
+    &-small-link {
+        color: $orange;
+        font-weight: 600;
+        text-decoration: underline;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &-stat {
+        span {
+            &.stat-title-small {
+                color: $dark-grey;
+                display: block;
+                @include convert-to-rem( 14, 500 );
+                .tooltip-icon {
+                    color: $orange;
+                    cursor: pointer;
+                    margin-left: 5px;
+                }
+            }
+            &.stat-large {
+                display: block;
+                @include convert-to-rem( 30 );
+            }
+        }
+    }
+    &-sectors {
+        display: grid;
+        gap: 20px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        .oc-card-sector {
+            align-items: center;
+            border: 1px solid $lighter-grey;
+            display: flex;
+            padding: 25px 20px;
+            &-icon {
+                margin-right: 10px;
+            }
+            &-txt {
+                h6 {
+                    @include convert-to-rem( 14 );
+                    margin-bottom: 1px;
+                    a {
+                        color: $font-colour;
+                    }
+                }
+                span {
+                    color: $dark-grey;
+                }
+            }
+        }
+    }
+    &-grid {
+        display: grid;
+        gap: 10px 10px;
+        height: 100%;
+        &.grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &.grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &-item {
+            background-color: #fff;
+            border: 1px solid $lighter-grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:1023.98px) {
+    .oc-card {
+        height: auto;
+        margin-bottom: 20px;
+        &-sectors {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &-grid {
+            height: auto;
+            margin-bottom: 20px;
+            &.grid-sm-1 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+.oc-map-card {
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+    .oc-map-small {
+        iframe {
+            border: 1px solid $dark-grey;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+
+.oc-card-empty {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    p {
+        color: $lighter-grey;
+        @include convert-to-rem( 30, 700 );
+        margin-bottom: 0;
+    }
+}
+
+.oc-split-card {
+    background-color: #fff;
+    border: 1px solid $lighter-grey;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    &-item {
+        align-items: center;
+        border-bottom: 1px solid $lighter-grey;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        &:last-of-type {
+            border-bottom: none;
+        }
+        .split-card-icon {
+            @include convert-to-rem( 40 );
+        }
+    }
+}
+
+.sector-cards {
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: repeat(2 ,1fr);
+    .sector-card {
+        background-color: #fff;
+        border: 1px solid $light-grey;
+        &-top {
+            align-items: center;
+            border-bottom: 1px solid $light-grey;
+            padding: 15px 20px;
+            display: flex;
+            &-icon {
+                margin-right: 15px;
+            }
+            &-info {
+                h6 {
+                    margin-bottom: 3px;
+                    a {
+                        color: $orange;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-bottom {
+            padding: 15px 20px;
+            ul {
+                display: flex;
+                @extend %unstyled-list;
+                li {
+                    margin-right: 20px;
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1023.98px) {
+    .sector-cards {
+        grid-template-columns: repeat(1, 1fr);
+        .sector-card {
+            &-bottom {
+                ul {
+                    display: block;
+                }
+            }
+        }
+    }
+}

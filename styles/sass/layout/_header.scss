@@ -1,0 +1,162 @@
+/* Header */
+
+.header-desktop {
+    background-color: #fff;
+    border-bottom: 1px solid $lighter-grey;
+}
+
+@media (min-width: 1024px) {
+    .header-mobile {
+        display: none;
+    }
+}
+
+.top-bar {
+    border-bottom: 1px solid $lighter-grey;
+    padding: 15px 0;
+    &-inner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .top-bar-left {
+            align-items: center;
+            display: flex;
+            .site-logo {
+                margin-right: 30px;
+                max-width: 120px;
+            }
+            .top-bar-search {
+                .form-control {
+                    border: 1px solid $dark-grey;
+                    border-radius: 0;
+                    box-shadow: none;
+                    color: $font-colour;
+                    @include convert-to-rem( 13 );
+                    &:hover, &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .top-bar-right {
+            .navbar-nav {
+                .nav-item {
+                    &.dropdown {
+                        .avatar {
+                            align-items: center;
+                            background-color: $bright-orange;
+                            border-radius: 50%;
+                            color: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            font-weight: 500;
+                            height: 40px;
+                            justify-content: center;
+                            width: 40px;
+                        }
+                        .dropdown-menu {
+                            @include convert-to-rem( 14 );
+                        }
+                        /*
+                        &::after {
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border: {
+                                left: 5px solid transparent;
+                                right: 5px solid transparent;
+                                top: 5px solid $font-colour;
+                            }
+                        }
+                        */
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1023.98px) {
+    .top-bar {
+        &-inner {
+            .top-bar-search {
+                display: none;
+            }
+        }
+    }
+}
+
+.main-nav {
+    padding: 15px 0;
+    .navbar-toggler {
+        background-color: #fff;
+        border: none;
+        border-radius: 0;
+        color: $font-colour;
+        //display: block;
+        @include convert-to-rem( 16, 600 );
+        // /margin: 0 auto;
+        padding: 12px 0;
+        width: 100%;
+        .svg-inline--fa, .mobile-menu-icon {
+            margin-right: 5px;
+        }
+    }
+    .navbar-nav {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .nav-item {
+            display: flex;
+            width: 100%;
+            .nav-link {
+                background-color: #fff;
+                border: 1px solid $lighter-grey;
+                color: $font-colour;
+                padding: 12px 20px;
+                text: {
+                    align: center;
+                    transform: uppercase;
+                }
+                width: 100%;
+                .menu-icon,.svg-inline--fa {
+                    margin-right: 8px;
+                }
+                &:hover {
+                    background-color: $lighter-grey;
+                    .menu-icon {
+                        color: $orange;
+                    }
+                }
+                &.active {
+                    background-color: $navy-blue;
+                    border-color: $navy-blue;
+                    color: #fff;
+                    .menu-icon {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1023.98px) {
+    .main-nav {
+        padding: 0;
+        .navbar-collapse {
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 100%;
+        }
+    }
+}
+
+.navbar-brand {
+    img {
+        max-width: 120px;
+    }
+}

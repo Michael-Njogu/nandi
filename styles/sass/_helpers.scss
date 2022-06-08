@@ -1,0 +1,45 @@
+/* Helpers */
+
+// Fonts
+$main-font: 'Inter', sans-serif;
+
+// Colours
+$navy-blue: #06163A;
+$orange: #FF3514;
+$bright-orange: #F2A93B;
+$lavender: #F3F6FB;
+$font-colour: #14161C;
+$light-grey: #CFCFCF;
+$lighter-grey: #E5E5E5;
+$dark-grey: #6A6971;
+$success-green: #299F00;
+$danger-red: #CF0303;
+
+// Mixins
+@mixin convert-to-rem( $pixels, $weight:null ) {
+    font: {
+        size: $pixels + px;
+        size: ($pixels / 16) + rem;
+        weight: $weight;
+    }
+    line-height: ($pixels + 6) + px;
+}
+
+@mixin quint-transition( $duration ) {
+    transition: all $duration cubic-bezier(0.230, 1.000, 0.320, 1.000); /* easeOutQuint */
+}
+
+// Misc
+%unstyled-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+%subtle-shadow {
+    box-shadow: 0 2px 4px rgba($font-colour,.08);
+}
+
+%subtle-shadow-alt {
+    box-shadow: 0 10px 60px 0 rgba($font-colour,.08);
+}

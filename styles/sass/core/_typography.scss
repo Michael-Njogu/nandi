@@ -1,0 +1,45 @@
+/* Typography */
+
+a {
+    text-decoration: none;
+}
+
+.styled-heading {
+    &::before {
+        background-color: $orange;
+        content: "";
+        display: inline-block;
+        font-weight: 500;
+        height: 15px;
+        margin-right: 10px;
+        width: 3px;
+    }
+    &-large {
+        @include convert-to-rem( 20 );
+        margin-bottom: 35px;
+    }
+    &-small {
+        @include convert-to-rem( 15 );
+        margin-bottom: 20px;
+    }
+}
+
+.oc-heading-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    h4 {
+        margin-bottom: 8px;
+    }
+}
+
+.stat-title-small {
+    color: $dark-grey;
+    display: block;
+    @include convert-to-rem( 14, 500 );
+}
+
+.stat-large {
+    display: block;
+    @include convert-to-rem( 30 );
+}
