@@ -209,3 +209,61 @@
         }
     }
 }
+
+.project-cards {
+    .project-card {
+        background-color: #fff;
+        border: 1px solid $light-grey;
+        margin-bottom: 15px;
+        &-main {
+            border-bottom: 1px solid $light-grey;
+            padding: 15px 20px;
+            h5 {
+                @include convert-to-rem( 16 );
+                margin-bottom: 1px;
+                a {
+                    color: $orange;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            ul {
+                color: $dark-grey;
+                display: flex;
+                @extend %unstyled-list;
+                margin-bottom: 10px;
+                li {
+                    span {
+                        font-weight: 500;
+                    }
+                    &::after {
+                        content: "·";
+                        padding: 0 5px;
+                    }
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+        &-bottom {
+            padding: 15px 20px;
+            ul {
+                display: flex;
+                @extend %unstyled-list;
+                li {
+                    margin-right: 15px;
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
