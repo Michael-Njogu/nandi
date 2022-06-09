@@ -478,13 +478,88 @@ a {
   line-height: 19px;
 }
 
+.form-check-input[type=checkbox] {
+  border-radius: 0;
+}
+
+.form-check-label {
+  font-weight: 400;
+}
+
 /* Tables */
+div.dataTables_wrapper div.dataTables_info {
+  display: none;
+}
+
 .data-table {
   background-color: #fff;
 }
 
+.data-table th {
+  font-weight: 600;
+  padding: 15px;
+}
+
 .data-table td {
   border-bottom: none !important;
+  padding: 15px;
+}
+
+.data-table caption {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+
+.data-table-bottom {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.data-table-bottom span.data-table-caption {
+  color: #6A6971;
+  font-weight: 400;
+}
+
+.data-table-bottom .data-table-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border: 1px solid #CFCFCF;
+  color: #14161C;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+.data-table-bottom .data-table-nav p {
+  margin-bottom: 0;
+}
+
+.data-table-bottom .data-table-nav .pagination {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.data-table-bottom .data-table-nav .pagination .page-link {
+  border: none;
+  color: #14161C;
 }
 
 /* Header */
@@ -676,7 +751,7 @@ footer {
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 19px;
-  padding: 20px;
+  padding: 17px 0;
   position: relative;
 }
 
@@ -837,6 +912,24 @@ footer .footer-inner .footer-links ul li:last-child a::after {
   padding: 15px 0;
 }
 
+.export-options .export-item {
+  background-color: #fff;
+  border: 1px solid #CFCFCF;
+  display: block;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.export-options .export-item:hover {
+  background-color: #E5E5E5;
+}
+
+.export-options .export-item-icon {
+  color: #6A6971;
+  margin-right: 5px;
+}
+
 /* Content */
 .data-wrapper {
   -webkit-box-flex: 1;
@@ -883,7 +976,7 @@ footer .footer-inner .footer-links ul li:last-child a::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px;
+  padding: 30px;
   position: relative;
 }
 
