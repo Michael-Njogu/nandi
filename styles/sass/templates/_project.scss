@@ -3,4 +3,42 @@
 .project-header {
     background-color: #fff;
     padding: 20px 0;
+    &-inner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        &-left {
+            h2 {
+                @include convert-to-rem( 16 );
+                margin-bottom: 1px;
+            }
+            ul {
+                color: $dark-grey;
+                display: flex;
+                @extend %unstyled-list;
+                li {
+                    span {
+                        font-weight: 500;
+                    }
+                    &::after {
+                        content: "·";
+                        padding: 0 5px;
+                    }
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.status-badge {
+    background-color: $dark-grey;
+    border-radius: 30px;
+    @include convert-to-rem( 12, 600 );
+    color: #fff;
+    padding: 8px 12px;
 }
