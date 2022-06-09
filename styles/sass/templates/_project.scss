@@ -57,3 +57,60 @@
     color: #fff;
     padding: 8px 12px;
 }
+
+.project-details {
+    .nav-tabs {
+        border-bottom: 1px solid $light-grey;
+        .nav-link {
+            background-color: $light-grey;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: $dark-grey;
+            font-weight: 500;
+            padding: 15px 20px;
+            &.active {
+                background-color: $steel-blue;
+                color: #fff;
+            }
+        }
+    }
+    .tab-content {
+        background-color: #fff;
+        .tab-pane {
+            .project-info {
+                color: $dark-grey;
+                padding: 20px;
+                &-item {
+                    margin-bottom: 20px;
+                    h6 {
+                        color: $font-colour;
+                        @include convert-to-rem( 14, 500 );
+                        margin-bottom: 4px;
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+                    ul {
+                        margin: 0;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .project-map {
+                height: 100%;
+                overflow: hidden;
+                padding: 20px;
+                position: relative;
+                iframe {
+                    border: 1px solid $dark-grey;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
