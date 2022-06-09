@@ -71,3 +71,21 @@
 .accordion-body {
     padding: 15px 0;
 }
+
+.export-options {
+    .export-item {
+        background-color: #fff;
+        border: 1px solid $light-grey;
+        display: block;
+        margin-bottom: 10px;
+        padding: 20px;
+        width: 100%;
+        &:hover {
+            background-color: $lighter-grey;
+        }
+        &-icon {
+            color: $dark-grey;
+            margin-right: 5px;
+        }
+    }
+}

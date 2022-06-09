@@ -1,9 +1,55 @@
 /* Tables */
 
+div.dataTables_wrapper div.dataTables_info {
+    display: none;
+}
+
 .data-table {
     background-color: #fff;
     @extend %subtle-shadow;
+    th {
+        font-weight: 600;
+        padding: 15px;
+    }
     td {
         border-bottom: none !important;
+        padding: 15px;
+    }
+    caption {
+        @include convert-to-rem( 12 );
+    }
+    &-bottom {
+        align-items: center;
+        display: flex;
+        @include convert-to-rem( 13, 500 );
+        justify-content: space-between;
+        margin-top: 25px;
+        span {
+            &.data-table-caption {
+                color: $dark-grey;
+                font-weight: 400;
+            }
+        }
+        .data-table-nav {
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid $light-grey;
+            color: $font-colour;
+            border-radius: 30px;
+            display: flex;
+            overflow: hidden;
+            padding-left: 15px;
+            p {
+                margin-bottom: 0;
+            }
+            .pagination {
+                margin-bottom: 0;
+                margin-left: 15px;
+                .page-link {
+                    border: none;
+                    color: $font-colour;
+                }
+            }
+        }
     }
 }

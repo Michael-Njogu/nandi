@@ -5,7 +5,7 @@ footer {
     color: $dark-grey;
     border-top: 1px solid $lighter-grey;
     @include convert-to-rem( 13 );
-    padding: 20px;
+    padding: 17px 0;
     position: relative;
     .footer-inner {
         display: flex;

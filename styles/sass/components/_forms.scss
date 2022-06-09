@@ -21,3 +21,13 @@
 .col-form-label, .form-select-small {
     @include convert-to-rem( 13, 600 );
 }
+
+.form-check-input {
+    &[type=checkbox] {
+        border-radius: 0;
+    }
+}
+
+.form-check-label {
+    font-weight: 400;
+}
