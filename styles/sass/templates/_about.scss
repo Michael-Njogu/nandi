@@ -1,0 +1,17 @@
+/* About */
+
+.county-logo {
+    margin-right: 30px;
+    img {
+        height: auto;
+        max-width: 140px;
+    }
+}
+
+.county-info {
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
