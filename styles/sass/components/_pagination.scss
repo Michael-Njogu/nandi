@@ -1,0 +1,22 @@
+/* Pagination */
+.data-table-nav, .list-nav {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid $light-grey;
+    color: $font-colour;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    padding-left: 15px;
+    p {
+        margin-bottom: 0;
+    }
+    .pagination {
+        margin-bottom: 0;
+        margin-left: 15px;
+        .page-link {
+            border: none;
+            color: $font-colour;
+        }
+    }
+}
