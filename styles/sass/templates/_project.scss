@@ -15,6 +15,7 @@
             ul {
                 color: $dark-grey;
                 display: flex;
+                flex-wrap: wrap;
                 @extend %unstyled-list;
                 li {
                     span {
@@ -29,6 +30,20 @@
                             display: none;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767.98px) {
+    .project-header {
+        &-inner {
+            display: block;
+            &-left {
+                margin-bottom: 15px;
+                h2 {
+                    margin-bottom: 5px;
                 }
             }
         }
