@@ -22,10 +22,13 @@
         .sidebar-nav-tabs {
             align-items: center;
             display: flex;
-            @include convert-to-rem( 20 );
+            @include convert-to-rem( 13, 500 );
             @extend %unstyled-list;
             height: 100%;
             justify-content: space-evenly;
+            .svg-inline--fa {
+                margin-right: 8px;
+            }
             li {
                 height: 100%;
                 width: 100%;
