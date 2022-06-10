@@ -14,6 +14,10 @@ div.dataTables_wrapper div.dataTables_info {
     td {
         border-bottom: none !important;
         padding: 15px;
+        a {
+            color: $font-colour;
+            text-decoration: underline;
+        }
     }
     caption {
         @include convert-to-rem( 12 );
