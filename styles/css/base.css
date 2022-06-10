@@ -132,7 +132,19 @@ a {
 }
 
 .bg-success {
-  background-color: #299F00;
+  background-color: #299F00 !important;
+}
+
+.bg-primary {
+  background-color: #2E3BAE !important;
+}
+
+.bg-danger {
+  background-color: #CF0303 !important;
+}
+
+.bg-warning {
+  background-color: #F2A93B !important;
 }
 
 .danger {
@@ -587,6 +599,11 @@ div.dataTables_wrapper div.dataTables_info {
 .data-table td {
   border-bottom: none !important;
   padding: 15px;
+}
+
+.data-table td a {
+  color: #14161C;
+  text-decoration: underline;
 }
 
 .data-table caption {
@@ -1301,13 +1318,18 @@ footer .footer-inner .footer-links ul li:last-child a::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 26px;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 19px;
   height: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.oc-sidebar-top .sidebar-nav-tabs .svg-inline--fa {
+  margin-right: 8px;
 }
 
 .oc-sidebar-top .sidebar-nav-tabs li {
