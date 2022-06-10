@@ -1,0 +1,31 @@
+/* Accordion */
+
+.accordion-item {
+    border-color: $lighter-grey;
+}
+
+.accordion-button {
+    color: $font-colour;
+    @include convert-to-rem( 14, 500 );
+    padding: 15px 0;
+    &:focus, &:active, &:not(.collapsed) {
+        background-color: #fff;
+        color: $font-colour;
+        border: none;
+        box-shadow: none;
+        &::after {
+            color: $font-colour;
+        }
+    }
+    span {
+        color: $dark-grey;
+        margin-right: 10px;
+    }
+}
+
+.accordion-body {
+    padding: 0 0 15px 0;
+    ul {
+        margin: 0;
+    }
+}
