@@ -87,6 +87,9 @@
         // /margin: 0 auto;
         padding: 12px 0;
         width: 100%;
+        &:focus {
+            box-shadow: none;
+        }
         .svg-inline--fa, .mobile-menu-icon {
             margin-right: 5px;
         }
