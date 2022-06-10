@@ -1,10 +1,32 @@
 /* About */
 
+.oc-card-split {
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width:767.98px) {
+    .oc-card-split {
+        display: block;
+    }
+}
+
 .county-logo {
     margin-right: 30px;
     img {
         height: auto;
         max-width: 140px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .county-logo {
+        margin: 0 0 15px;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
     }
 }
 
@@ -35,6 +57,18 @@
         }
         &-number {
             @include convert-to-rem( 25 );
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .icon-grid {
+        gap: 20px 20px;
+        padding: 0;
+        &-item {
+            &-number {
+                @include convert-to-rem( 20 );
+            }
         }
     }
 }
@@ -76,6 +110,18 @@
     }
 }
 
+@media(max-width:1023.98px) {
+    .oc-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:1023.98px) {
+    .oc-team-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .oc-card-contacts {
     display: flex;
     flex-wrap: wrap;
@@ -102,5 +148,11 @@
                 margin-bottom: 0;
             }
         }
+    }
+}
+
+@media(max-width:767.98px) {
+    .oc-card-contacts {
+        display: block;
     }
 }
