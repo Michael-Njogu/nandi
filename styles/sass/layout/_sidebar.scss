@@ -49,29 +49,6 @@
     }
 }
 
-.accordion-item {
-    border-color: $lighter-grey;
-}
-
-.accordion-button {
-    color: $font-colour;
-    @include convert-to-rem( 14, 500 );
-    padding: 15px 0;
-    &:focus, &:active, &:not(.collapsed) {
-        background-color: #fff;
-        color: $font-colour;
-        border: none;
-        box-shadow: none;
-        &::after {
-            color: $font-colour;
-        }
-    }
-}
-
-.accordion-body {
-    padding: 15px 0;
-}
-
 .export-options {
     .export-item {
         background-color: #fff;

@@ -44,6 +44,11 @@ a {
     @include convert-to-rem( 30 );
 }
 
+.stat-medium {
+    display: block;
+    @include convert-to-rem( 20 );
+}
+
 .sidebar-title {
     @include convert-to-rem( 14, 600 );
 }

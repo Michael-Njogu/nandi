@@ -1,9 +1,13 @@
 /* Content */
 
-.data-wrapper {
+.data-wrapper, .wrapper {
     flex: 1 0 auto;
     overflow: hidden;
     position: relative;
+}
+
+.content-section {
+    padding: 35px 0;
 }
 
 .ic-content {
