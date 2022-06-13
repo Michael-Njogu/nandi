@@ -1,12 +1,5 @@
 # Nandi County Template
 
-## Table of Contents
-* [Description](#description)
-* [Demo](#demo)
-* [Usage](#usage)
-* [Technologies](#technologies)
-* [Authors](#authors)
-
 ### Description
 This is a HTML template to demo the UI for Nandi Open County.
 
@@ -15,7 +8,7 @@ This is a HTML template to demo the UI for Nandi Open County.
 
 To view the demo, go to https://nandi-county.netlify.app/
 
-#### Active Links
+### Active Links
 * [Homepage](https://nandi-county.netlify.app/)
 * [Sectors](https://nandi-county.netlify.app/sectors.html)
 * [Sample Indicator (Table View)](https://nandi-county.netlify.app/indicator-table.html)
