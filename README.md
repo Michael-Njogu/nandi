@@ -16,7 +16,7 @@ To view the demo, go to https://nandi-county.netlify.app/
 * [Projects (List View)](https://nandi-county.netlify.app/projects.html)
 * [Projects (Table View)](https://nandi-county.netlify.app/projects-table.html)
 * [Project Details](https://nandi-county.netlify.app/project-detail.html)
-* [About](https://nandi-county.netlify.app/project-detail.html)
+* [About](https://nandi-county.netlify.app/about.html)
 * [Search Results](https://nandi-county.netlify.app/search-results.html)
 
 ### Usage
