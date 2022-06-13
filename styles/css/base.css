@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.sector-cards .sector-card-bottom ul, .project-cards .project-card-main ul, .project-cards .project-card-bottom ul, .breadcrumbs ul, .project-header-inner-left ul, .oc-card-contacts, footer .footer-inner .footer-links ul, .oc-sidebar-top .sidebar-nav-tabs {
+.sector-cards .sector-card-bottom ul, .project-cards .project-card-main ul, .project-cards .project-card-bottom ul, .breadcrumbs ul, .project-header-inner-left ul, .oc-card-contacts, .search-results .search-result-bottom ul, footer .footer-inner .footer-links ul, .oc-sidebar-top .sidebar-nav-tabs {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1025,6 +1025,76 @@ div.dataTables_wrapper div.dataTables_info {
 
 @media (max-width: 767.98px) {
   .oc-card-contacts {
+    display: block;
+  }
+}
+
+/* Search Results */
+.search-results .search-result {
+  background-color: #fff;
+  border: 1px solid #CFCFCF;
+  margin-bottom: 25px;
+}
+
+.search-results .search-result-top {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #CFCFCF;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-results .search-result-top-icon {
+  margin-right: 15px;
+}
+
+.search-results .search-result-top-info h6 {
+  margin-bottom: 3px;
+}
+
+.search-results .search-result-top-info h6 a {
+  color: #FF3514;
+}
+
+.search-results .search-result-top-info h6 a:hover {
+  text-decoration: underline;
+}
+
+.search-results .search-result-top-info h6 a span {
+  background-color: yellow;
+}
+
+.search-results .search-result-top-info p {
+  margin-bottom: 0;
+}
+
+.search-results .search-result-top-info p span {
+  font-weight: 600;
+}
+
+.search-results .search-result-bottom {
+  padding: 15px 20px;
+}
+
+.search-results .search-result-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-results .search-result-bottom ul li {
+  margin-right: 20px;
+}
+
+.search-results .search-result-bottom ul li span {
+  font-weight: 600;
+}
+
+@media (max-width: 1023.98px) {
+  .search-results .search-result-bottom ul {
     display: block;
   }
 }
