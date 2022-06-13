@@ -1,12 +1,10 @@
 /* Search Results */
 
 .search-results {
-    display: grid;
-    gap: 20px 20px;
-    grid-template-columns: repeat(2 ,1fr);
     .search-result {
         background-color: #fff;
         border: 1px solid $light-grey;
+        margin-bottom: 25px;
         &-top {
             align-items: center;
             border-bottom: 1px solid $light-grey;
@@ -23,10 +21,16 @@
                         &:hover {
                             text-decoration: underline;
                         }
+                        span {
+                            background-color: yellow;
+                        }
                     }
                 }
                 p {
                     margin-bottom: 0;
+                    span {
+                        font-weight: 600;
+                    }
                 }
             }
         }
@@ -40,6 +44,18 @@
                     span {
                         font-weight: 600;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1023.98px) {
+    .search-results {
+        .search-result {
+            &-bottom {
+                ul {
+                    display: block;
                 }
             }
         }
